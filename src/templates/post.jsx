@@ -22,6 +22,27 @@ const PostSuggestion = styled.div`
   align-items: center;
   margin: 1rem 3rem 0 3rem;
 `;
+class JustComments extends React.Component {
+  constructor(...args) {
+    super(...args)
+    this.ref = React.createRef()
+  }
+  render() {
+    return (
+      <div
+        ref={this.ref}
+        className="just-comments"
+        data-apikey="3825468a-d73b-41c9-8a4e-f46be0a927b5"
+      />
+    )
+  }
+  componentDidMount() {
+    const s = document.createElement('script')
+    s.src = '//just-comments.com/w.js'
+    s.setAttribute('data-timestamp', +new Date())
+    this.ref.current.appendChild(s)
+  }
+}
 
 const Post = ({ data, pageContext }) => {
   const { next, prev } = pageContext;
@@ -42,6 +63,8 @@ const Post = ({ data, pageContext }) => {
       <Header title={title} date={date} cover={image} />
       <Container>
         <Content input={html} />
+        <JustComments />
+
         <TagsBlock list={post.frontmatter.tags || []} />
       </Container>
       <SuggestionBar>

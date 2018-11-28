@@ -45,15 +45,17 @@
     "gatsby-transformer-sharp": "^2.1.5",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-emotion": "^9.2.12",
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
+    "redux": "^4.0.1",
     "typeface-candal": "0.0.54",
     "typeface-open-sans": "0.0.54",
-    "typography": "^0.16.17"
+    "typography": "^0.16.17",
+    "video-react": "^0.13.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

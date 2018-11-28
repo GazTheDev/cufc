@@ -5,6 +5,10 @@ import Helmet from 'react-helmet';
 import styled from 'react-emotion';
 import { Header, PostList } from 'components';
 import { Layout } from 'layouts';
+import { Player } from 'video-react';
+import '../styles/video.css';
+
+
 
 const PostWrapper = styled.div`
   display: flex;
@@ -29,8 +33,16 @@ const Index = ({ data }) => {
       <br />
 
       </Header>
-      <h1 style={{ textAlign: `center` }}
+      <br />
+      <center>
+        <iframe width="800" height="700" src="https://www.youtube.com/embed/KCh-1Pq8iwA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </center>
+      <hr />
 
+
+
+
+      <h1 style={{ textAlign: `center` }}
       >Recent News</h1>
       <PostWrapper>
         {edges.map(({ node }) => (
@@ -43,8 +55,14 @@ const Index = ({ data }) => {
             excerpt={node.excerpt}
           />
         ))}
+
       </PostWrapper>
+
+
+
+
     </Layout>
+
   );
 };
 
@@ -75,33 +93,33 @@ Index.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
-      limit: 8
-      sort: { order: DESC, fields: [frontmatter___date] }
+        allMarkdownRemark(
+          limit: 8
+      sort: {order: DESC, fields: [frontmatter___date] }
     ) {
-      edges {
-        node {
-          id
+        edges {
+      node {
+        id
           excerpt(pruneLength: 75)
           frontmatter {
-            title
+        title
             path
-            tags
-            date(formatString: "MM.DD.YYYY")
+      tags
+      date(formatString: "MM.DD.YYYY")
             cover {
-              childImageSharp {
-                fluid(
-                  maxWidth: 1000
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
+        childImageSharp {
+      fluid(
+        maxWidth: 1000
+        quality: 90
+                  traceSVG: {color: "#2B2B2F" }
                 ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
-          }
-        }
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
+      }
       }
     }
   }
+}
+}
+}
+}
 `;
