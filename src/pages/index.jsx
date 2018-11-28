@@ -8,6 +8,7 @@ import { Layout } from 'layouts';
 import { Player } from 'video-react';
 import '../styles/video.css';
 
+import { Image, Video, Transformation, CloudinaryContext, File } from 'cloudinary-react';
 
 
 const PostWrapper = styled.div`
@@ -29,11 +30,27 @@ const Index = ({ data }) => {
   return (
 
     <Layout>
-      <Header title="CUFC">Coggeshall United Football Club
+
+
+
+      <Header>
+        <Image cloudName="b2b-webmasters" publicId="coggershall-united/Coggeshall-United-FC-logo-new" />
+      </Header>
+
+
       <br />
 
-      </Header>
-      <br />
+
+      <center>
+        <h1>Last Result</h1>
+      </center>
+      <center>
+        <i>Sat 24/11/18 15:00
+
+</i>
+        <h2>Little Oakley&nbsp;<span class="score">2 - 3 (</span><strong>HT 0 - 2)&nbsp;</strong>Coggeshall United</h2>
+      </center>
+      <hr />
       <center>
         <iframe width="800" height="700" src="https://www.youtube.com/embed/KCh-1Pq8iwA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </center>

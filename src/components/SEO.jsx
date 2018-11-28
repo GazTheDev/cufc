@@ -86,6 +86,7 @@ const SEO = ({ title, desc, banner, pathname, article }) => (
             <meta name="image" content={seo.image} />
             <meta name="apple-mobile-web-app-title" content={shortName} />
             <meta name="application-name" content={shortName} />
+            <meta name="keywords" content="Coggeshall United, Coggeshall United Football Club, Coggeshall United FC, Coggeshall United FC Results, Coggeshall United Fixtures" />
             <script type="application/ld+json">
               {JSON.stringify(schemaOrgJSONLD)}
             </script>

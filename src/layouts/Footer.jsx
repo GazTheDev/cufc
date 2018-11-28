@@ -23,17 +23,21 @@ const Text = styled.div`
 
 const Footer = () => (
   <Wrapper>
+
+    {`  `} <h1 style={{ color: `white` }}>Sponsored By:</h1>
+
+    <img src="https://irp-cdn.multiscreensite.com/83e154ae/dms3rep/multi/mobile/Logo.png" />
     <Text>
       <i>Website Created By Modus Operandi Sports | <img width="100" height="100" src="https://res.cloudinary.com/b2b-webmasters/image/upload/v1543353507/MO_LOGO.png" /></i>
       <ul style={{ listStyle: `none` }}>
         <li>
-          <a href="/sponsors">Our Sponsors</a>
+          <a style={{ color: `red` }} href="/sponsors">Our Sponsors</a>
 
 
 
         </li>
         <li>
-          <a href="/media">Media</a>
+          <a style={{ color: `red` }} href="/media">Media</a>
 
         </li>
       </ul>

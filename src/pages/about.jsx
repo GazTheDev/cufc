@@ -21,7 +21,7 @@ const About = center => (
 
     <div class="container">
       <h3>
-        Welcome to Coggeshall United Football Club. We play in the Thurloww Nunn League Easton Counties. We was founded in 2017 by former professional footballer Cliff Akurang.
+        Welcome to Coggeshall United Football Club. We play in the Thurlow Nunn Eastern Counties First Division South. We were founded in 2017 by former professional footballer, Cliff Akurang.
         </h3>
     </div>
     <center>
@@ -84,7 +84,7 @@ const About = center => (
       <h1 style={{ textAlign: `center` }}>Mel Pyne</h1>
       <i style={{ textAlign: `center` }}>Bar Staff  </i>
       <br />
-      <Image cloudName="b2b-webmasters" publicId="faceless.jpg" /> <br />
+      <img src="https://res.cloudinary.com/b2b-webmasters/image/upload/v1543349721/faceless.jpg" />
 
 
     </Container>

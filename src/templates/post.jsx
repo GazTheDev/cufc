@@ -9,6 +9,8 @@ import { TagsBlock, Header, SEO } from 'components';
 // import Content from '../layouts/Content';
 // import SEO from '../components/SEO';
 import '../styles/prism';
+import { Image, Video, Transformation, CloudinaryContext, File } from 'cloudinary-react';
+
 
 const SuggestionBar = styled.div`
   display: flex;

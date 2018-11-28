@@ -11,7 +11,7 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Helmet title={' News | Coggeshall United'} />
-      <Header title="">Keep up to date with our latest club news. We try to keep this page updated as much as possible</Header>
+      <Header title="News">Keep up to date with our latest club news. </Header>
       <br />
       <br />
       <center>
