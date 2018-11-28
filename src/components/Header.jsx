@@ -28,13 +28,14 @@ const Text = styled.div`
   position: absolute;
   top: 40%;
   left: 50%;
+  bottom: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 100%;
+  width:50%;
   max-width: ${props => props.theme.layout.base};
-  padding: 0 5rem;
+  padding: 0 2rem;
   margin-bottom: 3rem;
   align-items: center;
 `;
