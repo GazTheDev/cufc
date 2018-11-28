@@ -6,6 +6,8 @@ import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import '../styles/bootstrap.min.css';
 import Img from "gatsby-image";
+import { Image, Video, Transformation, CloudinaryContext, File } from 'cloudinary-react';
+
 
 
 const Text = styled.div`
@@ -23,7 +25,7 @@ const About = center => (
 
         <br />
         <br />
-        <img alt="Coggeshall United Football Club" src="https://res.cloudinary.com/b2b-webmasters/image/upload/v1543348122/team_2018.jpg" />
+        <Image cloudName="b2b-webmasters" publicId="team_2018" />
 
 
         <table class="table">

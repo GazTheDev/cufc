@@ -23,6 +23,7 @@
   "dependencies": {
     "@babel/core": "^7.1.2",
     "babel-plugin-emotion": "^9.2.11",
+    "cloudinary-react": "^1.0.6",
     "emotion": "^9.2.12",
     "emotion-server": "^9.2.12",
     "emotion-theming": "^9.2.9",
