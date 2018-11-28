@@ -34,7 +34,7 @@ const Text = styled.div`
   text-align: center;
   width: 100%;
   max-width: ${props => props.theme.layout.base};
-  padding: 0 2rem;
+  padding: 0 5rem;
   margin-bottom: 3rem;
   align-items: center;
 `;

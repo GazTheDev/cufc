@@ -4,9 +4,10 @@ import theme from '../../config/theme';
 const headroom = css`
   .headroom-wrapper {
     position: fixed;
-    width: 100%;
+    width: 95%;
     z-index: 2000;
     top: 0;
+    bottom:200px;
   }
   .headroom {
     display: flex;

@@ -25,7 +25,18 @@ const Footer = () => (
   <Wrapper>
     <Text>
       <i>Website Created By Modus Operandi Sports | <img width="100" height="100" src="https://res.cloudinary.com/b2b-webmasters/image/upload/v1543353507/MO_LOGO.png" /></i>
+      <ul style={{ listStyle: `none` }}>
+        <li>
+          <a href="/sponsors">Our Sponsors</a>
 
+
+
+        </li>
+        <li>
+          <a href="/media">Media</a>
+
+        </li>
+      </ul>
 
     </Text>
   </Wrapper>

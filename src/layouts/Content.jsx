@@ -30,7 +30,7 @@ const Wrapper = styled.div`
     }
   }
   h1 {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   h2 {
     margin-top: 1rem;
@@ -43,6 +43,7 @@ const Wrapper = styled.div`
   h6 {
     display: inline-block;
     position: relative;
+    flex-wrap: wrap-reverse;
     a {
       box-shadow: none;
       border-bottom: none;

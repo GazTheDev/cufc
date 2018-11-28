@@ -9,13 +9,13 @@ import { Layout } from 'layouts';
 const PostWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
-  margin: 4rem 4rem 1rem 4rem;
-  @media (max-width: 1000px) {
+  margin: 4rem 5rem 1rem 4rem;
+  @media (max-width: 100px) {
     margin: 4rem 2rem 1rem 2rem;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 100px) {
     margin: 4rem 1rem 1rem 1rem;
   }
 `;
@@ -23,11 +23,11 @@ const PostWrapper = styled.div`
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
-    <Layout>
 
-      <Header title="Welcome To:">Coggeshall United Football Club
+    <Layout>
+      <Header title="CUFC">Coggeshall United Football Club
       <br />
-        The Weavers
+
       </Header>
       <h1 style={{ textAlign: `center` }}
 
